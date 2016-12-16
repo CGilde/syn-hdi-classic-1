@@ -1,0 +1,14 @@
+{
+	"EPM_XXX-table-grantor": {
+		"object_owner": { 
+			"roles": [
+				"EPM_XXX::external_access_g"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"EPM_XXX::external_access"
+			]
+		}
+	}
+}
