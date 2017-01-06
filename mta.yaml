@@ -12,9 +12,7 @@ modules:
           TARGET_CONTAINER: ~{hdi-container-service} # defined at (d1)
           
       - name: EPM_XXX-table-grantor                  #...for executing grant statement
-        properties: 
-          service: ~{EPM_SNWD-table-grantor-service} # defined at (d2)
-          
+
 resources:
   - name: hdi-container
     type: com.sap.xs.hdi-container
@@ -23,5 +21,4 @@ resources:
 
   - name: EPM_XXX-table-grantor
     type: org.cloudfoundry.existing-service         # service created with xs cups
-    properties:
-      EPM_SNWD-table-grantor-service: ${service-name} # (d2) get service into variable
+
